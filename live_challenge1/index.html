@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Netflix Clone</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <input type="checkbox" id="menuToggle" class="menu-toggle" />
+
+  <header class="header">
+    <div class="header__logo">NETFLIX</div>
+    <nav class="header__nav">
+      <ul>
+        <li><a href="#">홈</a></li>
+        <li><a href="#">TV 프로그램</a></li>
+        <li><a href="#">영화</a></li>
+        <li><a href="#">NEW! 요즘 대세</a></li>
+        <li><a href="#">내가 찜한 콘텐츠</a></li>
+      </ul>
+    </nav>
+    <div class="header__right">
+      <span class="header__icon">🔍</span>
+      <span class="header__icon">👤</span>
+      <label for="menuToggle" class="header__hamburger">☰</label>
+    </div>
+  </header>
+
+  <div class="mobile-menu">
+    <ul>
+      <li><a href="#">홈</a></li>
+      <li><a href="#">TV 프로그램</a></li>
+      <li><a href="#">영화</a></li>
+      <li><a href="#">NEW! 요즘 대세</a></li>
+      <li><a href="#">내가 찜한 콘텐츠</a></li>
+    </ul>
+  </div>
+
+  <section class="banner">
+    <div class="banner__content">
+      <h1 class="banner__title">Money Heist</h1>
+      <p class="banner__desc">
+        To carry out the biggest heist in history, a mysterious man called
+        The Professor recruits a band of eight robbers who have a single
+        characteristic: n...
+      </p>
+      <div class="banner__buttons">
+        <button class="btn btn--play">▶ Play</button>
+        <button class="btn btn--mylist">+ My List</button>
+      </div>
+    </div>
+  </section>
+
+  <main class="main">
+
+    <!-- Netflix Originals -->
+    <section class="card-section">
+      <h2 class="card-section__title">NETFLIX ORIGINALS</h2>
+      <div class="card-row card-row--portrait">
+
+        <!-- ✅ 확인된 유효 URL -->
+        <div class="card card--portrait">
+          <img class="card__thumb" src="https://image.tmdb.org/t/p/w500/34FaY8qpjBAVysSfrJ1l7nrAQaD.jpg" alt="Luis Miguel" />
+          <div class="card__info">
+            <div class="card__info-buttons">
+              <button class="card__btn card__btn--play">▶</button>
+              <button class="card__btn">+</button>
+              <button class="card__btn">👍</button>
+            </div>
+            <p class="card__info-title">Luis Miguel: The Series</p>
+            <p class="card__info-tags">드라마 · 전기</p>
+          </div>
+        </div>
+
+        <!-- ✅ 확인된 유효 URL -->
+        <div class="card card--portrait">
+          <img class="card__thumb" src="https://image.tmdb.org/t/p/w500/4EYPN5mVIhKLfxGruy7Dy41dTVn.jpg" alt="Lucifer" />
+          <div class="card__info">
+            <div class="card__info-buttons">
+              <button class="card__btn card__btn--play">▶</button>
+              <button class="card__btn">+</button>
+              <button class="card__btn">👍</button>
+            </div>
+            <p class="card__info-title">Lucifer</p>
+            <p class="card__info-tags">드라마 · 판타지</p>
+          </div>
+        </div>
+
+        <!-- ✅ 확인된 유효 URL -->
+        <div class="card card--portrait">
+          <img class="card__thumb" src="https://image.tmdb.org/t/p/w500/7vjaCdMw15FEbXyLQTVa04URsPm.jpg" alt="Haunted Latin America" />
+          <div class="card__info">
+            <div class="card__info-buttons">
+              <button class="card__btn card__btn--play">▶</button>
+              <button class="card__btn">+</button>
+              <button class="card__btn">👍</button>
+            </div>
+            <p class="card__info-title">Haunted: Latin America</p>
+            <p class="card__info-tags">공포 · 다큐</p>
+          </div>
+        </div>
+
+        <!-- ★ 교체: Who Killed Sara? → Jupiter's Legacy -->
+        <div class="card card--portrait">
+          <img class="card__thumb" src="https://image.tmdb.org/t/p/w500/9yxep7oJdkj3Pla9TD9gKflRApY.jpg" alt="Jupiter's Legacy" />
+          <div class="card__info">
+            <div class="card__info-buttons">
+              <button class="card__btn card__btn--play">▶</button>
+              <button class="card__btn">+</button>
+              <button class="card__btn">👍</button>
+            </div>
+            <p class="card__info-title">Jupiter's Legacy</p>
+            <p class="card__info-tags">액션 · 슈퍼히어로</p>
+          </div>
+        </div>
+
+        <!-- ★ 교체: Cobra Kai → Selena: The Series -->
+        <div class="card card--portrait">
+          <img class="card__thumb" src="https://image.tmdb.org/t/p/w500/mYsWyfiIMxx4HDm0Wck7oJ9ckez.jpg" alt="Selena" />
+          <div class="card__info">
+            <div class="card__info-buttons">
+              <button class="card__btn card__btn--play">▶</button>
+              <button class="card__btn">+</button>
+              <button class="card__btn">👍</button>
+            </div>
+            <p class="card__info-title">Selena: The Series</p>
+            <p class="card__info-tags">드라마 · 전기</p>
+          </div>
+        </div>
+
+        <!-- ★ 교체: Elite → Love, Death & Robots -->
+        <div class="card card--portrait">
+          <img class="card__thumb" src="https://image.tmdb.org/t/p/w500/asDqvkE66EegtKJJXIRhBJPxscr.jpg" alt="Love Death Robots" />
+          <div class="card__info">
+            <div class="card__info-buttons">
+              <button class="card__btn card__btn--play">▶</button>
+              <button class="card__btn">+</button>
+              <button class="card__btn">👍</button>
+            </div>
+            <p class="card__info-title">Love, Death & Robots</p>
+            <p class="card__info-tags">SF · 애니</p>
+          </div>
+        </div>
+
+        <!-- ✅ 확인된 유효 URL -->
+        <div class="card card--portrait">
+          <img class="card__thumb" src="https://image.tmdb.org/t/p/w500/aFHQi5mHx5HzKSjdMnuyKJyQrGg.jpg" alt="Transformers" />
+          <div class="card__info">
+            <div class="card__info-buttons">
+              <button class="card__btn card__btn--play">▶</button>
+              <button class="card__btn">+</button>
+              <button class="card__btn">👍</button>
+            </div>
+            <p class="card__info-title">Transformers: War for Cybertron</p>
+            <p class="card__info-tags">애니 · SF</p>
+          </div>
+        </div>
+
+        <!-- ✅ 확인된 유효 URL -->
+        <div class="card card--portrait">
+          <img class="card__thumb" src="https://image.tmdb.org/t/p/w500/scZlQQYnDVlnpxFTxaIv2g0BWnL.jpg" alt="Umbrella Academy" />
+          <div class="card__info">
+            <div class="card__info-buttons">
+              <button class="card__btn card__btn--play">▶</button>
+              <button class="card__btn">+</button>
+              <button class="card__btn">👍</button>
+            </div>
+            <p class="card__info-title">The Umbrella Academy</p>
+            <p class="card__info-tags">SF · 슈퍼히어로</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Trending Now -->
+    <section class="card-section">
+      <h2 class="card-section__title">Trending Now</h2>
+      <div class="card-row card-row--landscape">
+
+        <!-- ✅ 확인된 유효 URL -->
+        <div class="card card--landscape">
+          <img class="card__thumb" src="https://image.tmdb.org/t/p/w780/56v2KjBlU4XaOv9rVYEQypROD7P.jpg" alt="Stranger Things" />
+          <div class="card__info">
+            <div class="card__info-buttons">
+              <button class="card__btn card__btn--play">▶</button>
+              <button class="card__btn">+</button>
+              <button class="card__btn">👍</button>
+            </div>
+            <p class="card__info-title">Stranger Things</p>
+            <p class="card__info-tags">SF · 공포</p>
+          </div>
+        </div>
+
+        <!-- ★ 교체: The Witcher → Aquaman (golang-tmdb 공식 문서 확인 URL) -->
+        <div class="card card--landscape">
+          <img class="card__thumb" src="https://image.tmdb.org/t/p/w780/bOGkgRGdhrBYJSLpXaxhXVstddV.jpg" alt="Aquaman" />
+          <div class="card__info">
+            <div class="card__info-buttons">
+              <button class="card__btn card__btn--play">▶</button>
+              <button class="card__btn">+</button>
+              <button class="card__btn">👍</button>
+            </div>
+            <p class="card__info-title">Aquaman</p>
+            <p class="card__info-tags">액션 · 어드벤처</p>
+          </div>
+        </div>
+
+        <!-- ★ 교체: Dark → Emily in Paris (coil 공식 GitHub 확인 URL) -->
+        <div class="card card--landscape">
+          <img class="card__thumb" src="https://image.tmdb.org/t/p/w780/sjx6zjQI2dLGtEL0HGWsnq6UyLU.jpg" alt="Emily in Paris" />
+          <div class="card__info">
+            <div class="card__info-buttons">
+              <button class="card__btn card__btn--play">▶</button>
+              <button class="card__btn">+</button>
+              <button class="card__btn">👍</button>
+            </div>
+            <p class="card__info-title">Emily in Paris</p>
+            <p class="card__info-tags">드라마 · 로맨스</p>
+          </div>
+        </div>
+
+        <!-- ✅ 확인된 유효 URL -->
+        <div class="card card--landscape">
+          <img class="card__thumb" src="https://image.tmdb.org/t/p/w780/gFZriCkpJYsApPZEF3jhxL4yLzG.jpg" alt="Money Heist" />
+          <div class="card__info">
+            <div class="card__info-buttons">
+              <button class="card__btn card__btn--play">▶</button>
+              <button class="card__btn">+</button>
+              <button class="card__btn">👍</button>
+            </div>
+            <p class="card__info-title">Money Heist</p>
+            <p class="card__info-tags">범죄 · 스릴러</p>
+          </div>
+        </div>
+
+        <!-- ✅ 확인된 유효 URL -->
+        <div class="card card--landscape">
+          <img class="card__thumb" src="https://image.tmdb.org/t/p/w780/gwd2WpJHH7vhON0bCRTPekPRBnC.jpg" alt="Ozark" />
+          <div class="card__info">
+            <div class="card__info-buttons">
+              <button class="card__btn card__btn--play">▶</button>
+              <button class="card__btn">+</button>
+              <button class="card__btn">👍</button>
+            </div>
+            <p class="card__info-title">Ozark</p>
+            <p class="card__info-tags">범죄 · 드라마</p>
+          </div>
+        </div>
+
+        <!-- ✅ 확인된 유효 URL -->
+        <div class="card card--landscape">
+          <img class="card__thumb" src="https://image.tmdb.org/t/p/w780/wiE9doxiLwq3WgEQ6Qb2OHEEXQQ.jpg" alt="Peaky Blinders" />
+          <div class="card__info">
+            <div class="card__info-buttons">
+              <button class="card__btn card__btn--play">▶</button>
+              <button class="card__btn">+</button>
+              <button class="card__btn">👍</button>
+            </div>
+            <p class="card__info-title">Peaky Blinders</p>
+            <p class="card__info-tags">범죄 · 시대극</p>
+          </div>
+        </div>
+
+        <!-- ✅ 확인된 유효 URL -->
+        <div class="card card--landscape">
+          <img class="card__thumb" src="https://image.tmdb.org/t/p/w780/qw3J9cNeLioOLoR68WX7z79aCdK.jpg" alt="Squid Game" />
+          <div class="card__info">
+            <div class="card__info-buttons">
+              <button class="card__btn card__btn--play">▶</button>
+              <button class="card__btn">+</button>
+              <button class="card__btn">👍</button>
+            </div>
+            <p class="card__info-title">Squid Game</p>
+            <p class="card__info-tags">스릴러 · 드라마</p>
+          </div>
+        </div>
+
+        <!-- ✅ 확인된 유효 URL -->
+        <div class="card card--landscape">
+          <img class="card__thumb" src="https://image.tmdb.org/t/p/w780/7RyHsO4yDXtBv1zUU3mTpHeQ0d5.jpg" alt="Avengers Endgame" />
+          <div class="card__info">
+            <div class="card__info-buttons">
+              <button class="card__btn card__btn--play">▶</button>
+              <button class="card__btn">+</button>
+              <button class="card__btn">👍</button>
+            </div>
+            <p class="card__info-title">Avengers: Endgame</p>
+            <p class="card__info-tags">액션 · SF</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p class="footer__contact">📞 1-800-NETFLIX</p>
+    <ul class="footer__links">
+      <li><a href="#">고객 센터</a></li>
+      <li><a href="#">미디어 센터</a></li>
+      <li><a href="#">투자 정보</a></li>
+      <li><a href="#">입사 정보</a></li>
+      <li><a href="#">법적 고지</a></li>
+      <li><a href="#">개인정보 처리방침</a></li>
+      <li><a href="#">쿠키 설정</a></li>
+      <li><a href="#">회사 정보</a></li>
+    </ul>
+    <p class="footer__copy">© 2024 Netflix Clone. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

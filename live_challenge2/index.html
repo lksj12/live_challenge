@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Todos 앱</title>
+
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <div class="app">
+
+    <header class="app-header">
+      <h1>Todos 앱</h1>
+
+      <button id="add-todo-button" class="add-link">
+        새로운 TODO 추가하기
+      </button>
+    </header>
+
+    <!-- Todo List: JavaScript로 Todo 목록이 들어갈 영역 -->
+    <main id="todo-list" class="todo-list">
+      <!-- renderTodos()가 이 안에 todo-item을 생성함 -->
+    </main>
+
+    <section class="status-area">
+      <p id="todo-count">남은 할 일: 0개</p>
+    </section>
+
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
