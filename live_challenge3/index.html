@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GitHub Finder</title>
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <h1>GitHub Finder</h1>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="search-card">
+        <h2>Search GitHub Users</h2>
+        <p>Enter a username to fetch a user profile and repos</p>
+
+        <input 
+            type="text" 
+            id="searchUser" 
+            placeholder="GitHub username 입력"
+        />
+        </section>
+
+        <section id="profile"></section>
+
+        <h2 class="grass-title">Recent GitHub Activity</h2>
+        <section id="grass"></section>
+
+        <h2 class="repo-title">Latest Repos</h2>
+        <section id="repos"></section>
+    </main>
+
+    <footer>
+        <p>GitHub Finder ©</p>
+    </footer>
+
+    <script src="js/github.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

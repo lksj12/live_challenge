@@ -1,0 +1,291 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    background-color: #fff;
+}
+
+.navbar {
+    background-color: #4285f4;
+    color: white;
+    padding: 14px 0;
+}
+
+.navbar h1 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.container {
+    width: 95%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.search-card {
+    margin-top: 18px;
+    padding: 22px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.search-card h2 {
+    margin: 0 0 10px;
+    font-size: 36px;
+}
+
+.search-card p {
+    margin: 0 0 18px;
+    color: #777;
+    font-size: 18px;
+}
+
+#searchUser {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#profile {
+    margin-top: 24px;
+}
+
+.repo-title {
+    margin-top: 24px;
+    font-size: 28px;
+}
+
+#repos {
+    margin-bottom: 40px;
+}
+
+footer {
+    margin-top: 40px;
+    padding: 20px 0;
+    text-align: center;
+    background-color: #f8f8f8;
+}
+
+.profile-card {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    gap: 30px;
+    margin-top: 24px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.profile-left {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.profile-img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+.profile-link {
+    display: block;
+    padding: 12px;
+    color: white;
+    background-color: #4285f4;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.profile-right h2 {
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 18px 0;
+}
+
+.badges span {
+    padding: 8px 12px;
+    color: white;
+    background-color: #4285f4;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.badges span:nth-child(2) {
+    background-color: #12b886;
+}
+
+.badges span:nth-child(3) {
+    background-color: #17a2b8;
+}
+
+.info-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.info-list li {
+    padding: 14px 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+.info-list li:last-child {
+    border-bottom: none;
+}
+
+.repo-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 10px;
+    padding: 16px 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.repo-name {
+    color: #4285f4;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.repo-name:hover {
+    text-decoration: underline;
+}
+
+.repo-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.repo-stats span {
+    padding: 7px 10px;
+    color: white;
+    background-color: #4285f4;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.repo-stats span:nth-child(2) {
+    background-color: #adb5bd;
+}
+
+.repo-stats span:nth-child(3) {
+    background-color: #12b886;
+}
+
+.alert {
+    margin-top: 18px;
+    padding: 12px 16px;
+    color: white;
+    background-color: #dc3545;
+    border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+    .profile-card {
+        grid-template-columns: 1fr;
+    }
+
+    .repo-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .search-card h2 {
+        font-size: 28px;
+    }
+}
+
+.spinner {
+    width: 48px;
+    height: 48px;
+    margin: 40px auto;
+    border: 6px solid #ddd;
+    border-top: 6px solid #4285f4;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.grass-title {
+    margin-top: 24px;
+    font-size: 28px;
+}
+
+.grass-card {
+    margin-bottom: 24px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.grass-description {
+    margin-top: 0;
+    margin-bottom: 14px;
+    color: #666;
+}
+
+.grass-grid {
+    display: grid;
+    grid-template-columns: repeat(15, 16px);
+    gap: 6px;
+}
+
+.grass-cell {
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+    background-color: #ebedf0;
+}
+
+.level-0 {
+    background-color: #ebedf0;
+}
+
+.level-1 {
+    background-color: #9be9a8;
+}
+
+.level-2 {
+    background-color: #40c463;
+}
+
+.level-3 {
+    background-color: #216e39;
+}
+
+@media (max-width: 768px) {
+    .grass-grid {
+        grid-template-columns: repeat(10, 16px);
+    }
+}
