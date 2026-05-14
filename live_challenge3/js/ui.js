@@ -148,16 +148,11 @@ class UI {
 
     showAlert(message) {
         this.clearAlert();
-
         const div = document.createElement("div");
         div.className = "alert";
         div.textContent = message;
-
-        const container = document.querySelector(".container");
         const searchCard = document.querySelector(".search-card");
-
-        container.insertBefore(div, searchCard);
-
+        searchCard.before(div);
         setTimeout(() => {
             this.clearAlert();
         }, 3000);
