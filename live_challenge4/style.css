@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, "Noto Sans KR", sans-serif;
+    background-color: #f4f7fb;
+    color: #222;
+}
+
+.app-container {
+    width: fit-content;
+    max-width: 95vw;
+    margin: 40px auto;
+    padding: 24px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    overflow-x: auto;
+}
+
+h1 {
+    margin-top: 0;
+    text-align: center;
+    font-size: 28px;
+}
+
+.toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+    gap: 20px;
+}
+
+#cell-position {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 14px;
+    background-color: #eef3f8;
+    border-radius: 8px;
+    min-width: 120px;
+    white-space: nowrap;
+}
+
+.button-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+button {
+    padding: 10px 14px;
+    border: none;
+    border-radius: 8px;
+    background-color: #2563eb;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+#delete-row-button,
+#delete-column-button {
+    background-color: #dc2626;
+}
+
+#delete-row-button:hover,
+#delete-column-button:hover {
+    background-color: #b91c1c;
+}
+
+#export-button {
+    background-color: #059669;
+}
+
+#export-button:hover {
+    background-color: #047857;
+}
+
+#spreadsheet {
+    display: grid;
+    border: 1px solid #b6c2cf;
+    width: fit-content;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e5eaf0;
+    border: 1px solid #b6c2cf;
+    font-weight: bold;
+    user-select: none;
+}
+
+.corner-header {
+    background-color: #d8dee6;
+}
+
+.cell {
+    width: 90px;
+    height: 40px;
+    border: 1px solid #c8d0da;
+    padding: 6px;
+    font-size: 15px;
+    outline: none;
+    background-color: white;
+}
+
+.cell:focus {
+    outline: none;
+}
+
+.highlight-header {
+    background-color: skyblue;
+}
+
+.selected-cell {
+    background-color: #e0f2fe;
+    border: 2px solid #0284c7;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Spreadsheet</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- SheetJS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
+</head>
+<body>
+    <div class="app-container">
+        <h1>Mini Spreadsheet</h1>
+
+        <div class="toolbar">
+            <div id="cell-position">Cell: -</div>
+
+            <div class="button-group">
+                <button id="add-row-button">Add Row</button>
+                <button id="delete-row-button">Delete Row</button>
+                <button id="add-column-button">Add Column</button>
+                <button id="delete-column-button">Delete Column</button>
+                <button id="export-button">Export SpreadSheet</button>
+            </div>
+        </div>
+
+        <div id="spreadsheet"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
