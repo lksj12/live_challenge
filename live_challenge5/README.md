@@ -22,7 +22,7 @@
 | 데이터 저장 | `data/study.db` |
 | 표시 시간대 | DB에는 UTC로 저장하고 화면에서는 `Asia/Seoul`로 변환 |
 | GitHub 링크 | https://github.com/lksj12/live_challenge/live_challenge5 |
-| 실행 또는 배포 링크 | lksj.iptime.org:3001 |
+| 실행 또는 배포 링크 | http://lksj.iptime.org:3001 |
 
 ### 수행 수준
 
