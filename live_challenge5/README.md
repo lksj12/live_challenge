@@ -82,7 +82,7 @@
 ## 3. 화면 캡처
 
 | 화면 | 상태 |
-|---|---|:---:|
+|---|:---:|
 | 로그인 | ![SignIn](imgs/1.SignIn.png)|
 | 회원가입 | ![SignUp](imgs/2.SignUp.png) |
 | 일반 사용자 로그인 후 | ![AfterSignIn](imgs/3.AfterSignIn.png) |
@@ -319,8 +319,6 @@ crud_practice/
 │  └─ package.json
 ├─ data/
 │  └─ study.db
-└─ screenshots/
-   └─ <!-- TODO: 제출용 화면 캡처 -->
 ```
 
 ---
