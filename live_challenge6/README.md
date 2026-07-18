@@ -829,7 +829,7 @@ AI 활용의 전체 과정과 실제 프롬프트는 별도 파일인 `AI_활용
 
 | 번호 | 목적 | AI 도구 | 프롬프트 요약 | 결과 활용 | 내가 수정한 부분 |
 |---:|---|---|---|---|---|
-| 1 | 요구사항·구조 설계 | OpenAI ChatGPT | React, TypeScript, Express와 SQLite 기반 쇼핑몰을 단계별로 구현하도록 요청 | client와 server가 분리된 프로젝트 구조 설계 | Firebase 대신 강사에게 허용받은 SQLite·JWT 인증 적용 |
+| 1 | 요구사항·구조 설계 | OpenAI ChatGPT | React, TypeScript, Express와 SQLite 기반 쇼핑몰을 단계별로 구현하도록 요청 | client와 server가 분리된 프로젝트 구조 설계 | Firebase 대신 SQLite·JWT 인증 적용 |
 | 2 | Redux 상태관리 | OpenAI ChatGPT | 상품, 인증과 장바구니 상태를 Redux Toolkit으로 관리하도록 요청 | slice, action과 selector 작성 | 재고 상태를 별도 inventory slice로 분리 |
 | 3 | 사용자 인증 | OpenAI ChatGPT | 회원가입, 로그인, JWT 발급과 인증 복원 구현 요청 | Express 인증 API와 auth Redux 상태 구현 | 로그인 성공 후 경로 이동과 관리자 접근 제한 수정 |
 | 4 | 상품 API | OpenAI ChatGPT | Fake Store API, loading·error·empty 및 mock fallback 요청 | 상품 요청 서비스와 상품 목록 UI 구현 | 응답 검증, 이미지 fallback과 불필요한 배지 제거 |
