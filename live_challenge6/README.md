@@ -1020,7 +1020,7 @@ Git 설정은 제외하고 들여쓰기는 4칸을 사용해줘.
 | 과제 README | `live_challenge6/README.md` |
 | AI 활용 기록 | `live_challenge6/AI_활용_기록.md` |
 | 오류 해결 기록 | `live_challenge6/오류_해결_기록.md` |
-| 실행 화면 | `live_challenge6/react-shopping-mall/screenshots/` |
-| 결과물 레포 URL | 제출 전 작성 |
+| 실행 화면 | `live_challenge6/imgs/` |
+| 결과물 레포 URL | `https://github.com/lksj12/live_challenge/blob/main/live_challenge6/` |
 | 실행·배포 URL | lksj.iptime.org:3003 |
 | 제출 폼 | https://goor.me/aiswwork1 |
