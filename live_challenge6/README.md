@@ -278,7 +278,7 @@ Fake Store API를 공통으로 사용하기 때문에 일부 상품 이미지와
 
 ## 6. 사용자 인증
 
-과제 안내에서는 Firebase Authentication을 제시했지만, 강사 안내에 따라 Express, SQLite, bcrypt, JWT를 이용한 자체 인증 방식으로 구현하였다.
+과제 안내에서는 Firebase Authentication을 제시했지만, 자체 데이터 베이스 구현 연습을 위해 Express, SQLite, bcrypt, JWT를 이용한 자체 인증 방식으로 구현하였다.
 
 - 로그인 방식: 이메일과 비밀번호를 이용한 자체 로그인
 - 인증 상태 관리 위치: `client/src/features/auth`의 Redux 상태 모듈
