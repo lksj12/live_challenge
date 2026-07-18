@@ -575,6 +575,15 @@ live_challenge6/
 ├── README.md
 ├── AI_활용_기록.md
 ├── 오류_해결_기록.md
+├── imgs/
+│   ├── 01.product_category.png
+│   ├── 02.login_register.png
+│   ├── 03.product_detail.png
+│   ├── 04.cart.png
+│   ├── 05.account_management.png
+│   ├── 06.order_history.png
+│   ├── 07.admin_account.png
+│   └── 08.admin_product.png
 └── react-shopping-mall/
     ├── client/
     │   ├── public/
@@ -663,15 +672,6 @@ live_challenge6/
     │   ├── tsconfig.json
     │   ├── tsconfig.node.json
     │   └── vite.config.ts
-    ├── screenshots/
-    │   ├── 01.product_list_category.png
-    │   ├── 02.login_register.png
-    │   ├── 03.product_detail.png
-    │   ├── 04.cart.png
-    │   ├── 05.account_management.png
-    │   ├── 06.order_history.png
-    │   ├── 07.admin_account.png
-    │   └── 08.admin_product.png
     └── server/
         ├── data/
         ├── src/
