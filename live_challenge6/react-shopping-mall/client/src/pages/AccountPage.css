@@ -1,0 +1,189 @@
+.account-page {
+    min-height: calc(100vh - 72px);
+    padding: 48px 20px 80px;
+    background: #f6f7f9;
+}
+
+.account-page-inner {
+    width: min(760px, 100%);
+    margin: 0 auto;
+}
+
+.account-page-header {
+    margin-bottom: 28px;
+}
+
+.account-page-header h1 {
+    margin: 6px 0 10px;
+    font-size: clamp(2rem, 5vw, 2.8rem);
+}
+
+.account-page-header p {
+    margin: 0;
+    color: #5e6470;
+}
+
+.account-page-eyebrow {
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.16em;
+    color: #555dff !important;
+}
+
+.forced-password-notice {
+    margin-bottom: 20px;
+    padding: 18px 20px;
+    border: 1px solid #f2bf48;
+    border-radius: 14px;
+    background: #fff7dd;
+}
+
+.forced-password-notice strong {
+    color: #7a5300;
+}
+
+.forced-password-notice p {
+    margin: 8px 0 0;
+    line-height: 1.6;
+    color: #6d5420;
+}
+
+.account-card {
+    margin-top: 20px;
+    padding: 26px;
+    border: 1px solid #e1e4e9;
+    border-radius: 18px;
+    background: #ffffff;
+    box-shadow: 0 10px 30px rgb(20 25 35 / 6%);
+}
+
+.account-card h2 {
+    margin: 0 0 22px;
+    font-size: 1.25rem;
+}
+
+.account-information {
+    display: grid;
+    gap: 14px;
+    margin: 0;
+}
+
+.account-information div {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 20px;
+    padding: 14px 0;
+    border-bottom: 1px solid #eceef2;
+}
+
+.account-information div:last-child {
+    border-bottom: 0;
+}
+
+.account-information dt {
+    color: #6b7280;
+    font-weight: 700;
+}
+
+.account-information dd {
+    margin: 0;
+    overflow-wrap: anywhere;
+    color: #252936;
+}
+
+.account-form {
+    display: grid;
+    gap: 18px;
+}
+
+.account-form label {
+    display: grid;
+    gap: 8px;
+    font-weight: 700;
+    color: #313642;
+}
+
+.account-form input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 14px;
+    border: 1px solid #cfd4dc;
+    border-radius: 10px;
+    font: inherit;
+    background: #ffffff;
+}
+
+.account-form input:focus {
+    border-color: #555dff;
+    outline: 3px solid rgb(85 93 255 / 14%);
+}
+
+.account-primary-button,
+.account-danger-button {
+    min-height: 46px;
+    padding: 0 20px;
+    border: 0;
+    border-radius: 10px;
+    font: inherit;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.account-primary-button {
+    color: #ffffff;
+    background: #333ce8;
+}
+
+.account-danger-button {
+    color: #ffffff;
+    background: #c62d38;
+}
+
+.account-primary-button:disabled,
+.account-danger-button:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.account-form-error,
+.account-form-success {
+    margin: 0;
+    padding: 12px 14px;
+    border-radius: 10px;
+    line-height: 1.5;
+}
+
+.account-form-error {
+    color: #9f1722;
+    background: #fff0f1;
+}
+
+.account-form-success {
+    color: #17683a;
+    background: #eaf8f0;
+}
+
+.account-danger-card {
+    border-color: #f0c5c8;
+}
+
+.account-danger-description {
+    margin: 0;
+    line-height: 1.6;
+    color: #7f343a;
+}
+
+@media (max-width: 560px) {
+    .account-page {
+        padding: 32px 14px 60px;
+    }
+
+    .account-card {
+        padding: 20px;
+    }
+
+    .account-information div {
+        grid-template-columns: 1fr;
+        gap: 5px;
+    }
+}

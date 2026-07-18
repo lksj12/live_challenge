@@ -1,0 +1,107 @@
+.cart-transfer-backdrop {
+    position: fixed;
+    z-index: 2000;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: rgb(18 24 38 / 58%);
+}
+
+.cart-transfer-dialog {
+    width: min(520px, 100%);
+    padding: 28px;
+    border-radius: 18px;
+    background: #ffffff;
+    box-shadow: 0 24px 80px rgb(0 0 0 / 25%);
+}
+
+.cart-transfer-eyebrow {
+    margin: 0;
+    color: #3159d8;
+    font-size: 0.78rem;
+    font-weight: 900;
+    letter-spacing: 0.14em;
+}
+
+.cart-transfer-dialog h2 {
+    margin: 8px 0 12px;
+    color: #172033;
+    font-size: 1.55rem;
+}
+
+.cart-transfer-description {
+    margin: 0;
+    color: #667085;
+    line-height: 1.65;
+}
+
+.cart-transfer-summary {
+    display: grid;
+    gap: 10px;
+    margin: 22px 0;
+}
+
+.cart-transfer-summary div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+    padding: 14px 16px;
+    border-radius: 10px;
+    background: #f5f7fa;
+}
+
+.cart-transfer-summary span {
+    color: #596579;
+}
+
+.cart-transfer-summary strong {
+    color: #172033;
+    white-space: nowrap;
+}
+
+.cart-transfer-actions {
+    display: grid;
+    gap: 10px;
+}
+
+.cart-transfer-actions button {
+    min-height: 48px;
+    border-radius: 10px;
+    font: inherit;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.cart-transfer-merge {
+    border: 0;
+    color: #ffffff;
+    background: #3159d8;
+}
+
+.cart-transfer-overwrite {
+    border: 1px solid #c7cfdb;
+    color: #344054;
+    background: #ffffff;
+}
+
+.cart-transfer-warning {
+    margin: 14px 0 0;
+    color: #9a5e00;
+    font-size: 0.84rem;
+    line-height: 1.5;
+}
+
+@media (max-width: 520px) {
+    .cart-transfer-dialog {
+        padding: 22px;
+    }
+
+    .cart-transfer-summary div {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 5px;
+    }
+}

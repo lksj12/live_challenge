@@ -1,0 +1,157 @@
+.site-header {
+    position: sticky;
+    z-index: 20;
+    top: 0;
+    height: 72px;
+    border-bottom: 1px solid #e0e5ee;
+    background: rgb(255 255 255 / 94%);
+    backdrop-filter: blur(12px);
+}
+
+.site-header-inner {
+    display: flex;
+    width: min(1240px, calc(100% - 40px));
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    margin: 0 auto;
+}
+
+.site-logo {
+    color: #2449bd;
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: -0.03em;
+    text-decoration: none;
+}
+
+.site-navigation {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.site-navigation a {
+    color: #344054;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.site-navigation a:hover {
+    color: #2449bd;
+}
+
+.header-user {
+    color: #667085;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.header-auth-link {
+    display: inline-flex;
+    min-height: 40px;
+    align-items: center;
+    padding: 0 15px;
+    border-radius: 9px;
+    color: #ffffff !important;
+    background: #3159d8;
+}
+
+.header-auth-link:hover {
+    background: #2449bd;
+}
+
+.header-logout-button {
+    min-height: 40px;
+    padding: 0 14px;
+    border: 1px solid #cbd3df;
+    border-radius: 9px;
+    color: #344054;
+    background: #ffffff;
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.header-logout-button:hover {
+    background: #f4f6f9;
+}
+
+@media (max-width: 600px) {
+    .site-header-inner {
+        width: calc(100% - 28px);
+    }
+
+    .site-navigation {
+        gap: 10px;
+    }
+
+    .site-navigation > a:first-child,
+    .header-user {
+        display: none;
+    }
+
+    .header-auth-link,
+    .header-logout-button {
+        font-size: 13px;
+    }
+}
+
+.header-account-link {
+    display: inline-flex;
+    min-height: 40px;
+    align-items: center;
+    padding: 0 12px;
+    border-radius: 9px;
+    background: #f0f3ff;
+}
+
+.header-account-link:hover {
+    background: #e2e7ff;
+}
+
+@media (max-width: 760px) {
+    .header-account-link {
+        font-size: 13px;
+    }
+}
+
+.header-admin-link {
+    display: inline-flex;
+    min-height: 40px;
+    align-items: center;
+    padding: 0 12px;
+    border-radius: 9px;
+    color: #ffffff !important;
+    background: #5037b8;
+}
+
+.header-admin-link:hover {
+    background: #40299d;
+}
+
+@media (max-width: 760px) {
+    .header-admin-link {
+        font-size: 13px;
+    }
+}
+
+.header-orders-link {
+    display: inline-flex;
+    min-height: 40px;
+    align-items: center;
+    padding: 0 12px;
+    border-radius: 9px;
+    background: #f3f5f8;
+}
+
+.header-orders-link:hover {
+    background: #e9edf3;
+}
+
+@media (max-width: 760px) {
+    .header-orders-link {
+        font-size: 13px;
+    }
+}
