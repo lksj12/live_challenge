@@ -73,14 +73,14 @@ Fake Store API를 공통으로 사용하기 때문에 일부 상품 이미지와
 
 | 화면 | 이미지 | 설명 |
 |---|---|---|
-| 상품 목록·검색 | [](screenshots/01.product_list_category.png) | Fake Store API 상품 목록, 상품명 검색, 카테고리 필터 및 재고 상태 |
-| 로그인·회원가입 | [](screenshots/02.login_register.png) | 자체 회원가입·로그인 화면과 로그인 오류 안내 |
-| 상품 상세·재고 | [](screenshots/03.product_detail.png) | 상품 상세 정보, 저재고·품절 표시 및 재입고 알림 신청 |
-| 장바구니·결제 | [](screenshots/04.cart.png) | 상품 수량 변경, 삭제, 총 결제 예정 금액, 재고 부족 안내 및 모의 결제 |
-| 계정 관리 | [](screenshots/05.account_management.png) | 사용자 정보, 비밀번호 변경 및 회원 탈퇴 기능 |
-| 구매 내역 | [](screenshots/06.order_history.png) | 주문별 결제 상태, 배송 상태, 주문 상품과 한국 시간 기준 주문 일시 |
-| 관리자 사용자 관리 | [](screenshots/07.admin_account.png) | 사용자 목록, 임시 비밀번호 초기화 및 일반 사용자 삭제 |
-| 관리자 상품 관리 | [](screenshots/08.admin_product.png) | 상품별 현재 재고 조회, 재고 수량 변경 및 품절 상태 관리 |
+| 상품 목록·검색 | ![product_category](imgs/01.product_category.png) | Fake Store API 상품 목록, 상품명 검색, 카테고리 필터 및 재고 상태 |
+| 로그인·회원가입 | ![](imgs/02.login_register.png) | 자체 회원가입·로그인 화면과 로그인 오류 안내 |
+| 상품 상세·재고 | ![](imgs/03.product_detail.png) | 상품 상세 정보, 저재고·품절 표시 및 재입고 알림 신청 |
+| 장바구니·결제 | ![](imgs/04.cart.png) | 상품 수량 변경, 삭제, 총 결제 예정 금액, 재고 부족 안내 및 모의 결제 |
+| 계정 관리 | ![](imgs/05.account_management.png) | 사용자 정보, 비밀번호 변경 및 회원 탈퇴 기능 |
+| 구매 내역 | ![](imgs/06.order_history.png) | 주문별 결제 상태, 배송 상태, 주문 상품과 한국 시간 기준 주문 일시 |
+| 관리자 사용자 관리 | ![](imgs/07.admin_account.png) | 사용자 목록, 임시 비밀번호 초기화 및 일반 사용자 삭제 |
+| 관리자 상품 관리 | ![](imgs/08.admin_product.png) | 상품별 현재 재고 조회, 재고 수량 변경 및 품절 상태 관리 |
 
 > 실행 화면에는 실제 비밀번호, JWT, 개인정보 또는 실제 결제 정보가 노출되지 않도록 하였다. 테스트 계정의 이메일이 표시되는 경우 과제용 계정만 사용하였다.
 
